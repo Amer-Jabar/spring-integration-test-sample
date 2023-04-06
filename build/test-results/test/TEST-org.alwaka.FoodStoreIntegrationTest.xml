@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.alwaka.FoodStoreIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-06T21:36:24" hostname="LLOYD" time="0.291">
+  <properties/>
+  <testcase name="shouldGetFoods()" classname="org.alwaka.FoodStoreIntegrationTest" time="0.291"/>
+  <system-out><![CDATA[00:36:22.168 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [FoodStoreIntegrationTest]: using SpringBootContextLoader
+00:36:22.174 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [org.alwaka.FoodStoreIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:36:22.176 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.alwaka.FoodStoreIntegrationTest]: FoodStoreIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:36:22.207 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [FoodStoreIntegrationTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+00:36:22.275 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Users\tech Line\Desktop\Projects\Demo\spring-integration-test-1\build\classes\java\main\org\alwaka\Main.class]
+00:36:22.276 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.alwaka.Main for test class org.alwaka.FoodStoreIntegrationTest
+00:36:22.356 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [FoodStoreIntegrationTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+00:36:22.357 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [FoodStoreIntegrationTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-04-07T00:36:22.587+03:00  INFO 18968 --- [    Test worker] org.alwaka.FoodStoreIntegrationTest      : Starting FoodStoreIntegrationTest using Java 19.0.1 with PID 18968 (started by tech Line in C:\Users\tech Line\Desktop\Projects\Demo\spring-integration-test-1)
+2023-04-07T00:36:22.588+03:00  INFO 18968 --- [    Test worker] org.alwaka.FoodStoreIntegrationTest      : No active profile set, falling back to 1 default profile: "default"
+2023-04-07T00:36:23.094+03:00  INFO 18968 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-07T00:36:23.136+03:00  INFO 18968 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2023-04-07T00:36:23.414+03:00  INFO 18968 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-07T00:36:23.536+03:00  INFO 18968 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:spring-integration-test-1 user=SA
+2023-04-07T00:36:23.537+03:00  INFO 18968 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-07T00:36:23.576+03:00  INFO 18968 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-07T00:36:23.614+03:00  INFO 18968 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2023-04-07T00:36:23.730+03:00  WARN 18968 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-04-07T00:36:23.830+03:00  INFO 18968 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-07T00:36:24.247+03:00  INFO 18968 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-07T00:36:24.252+03:00  INFO 18968 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-07T00:36:24.587+03:00  WARN 18968 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-07T00:36:24.885+03:00  INFO 18968 --- [    Test worker] org.alwaka.FoodStoreIntegrationTest      : Started FoodStoreIntegrationTest in 2.479 seconds (process running for 3.401)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
